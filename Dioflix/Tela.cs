@@ -23,7 +23,7 @@ namespace DioFlix
             Console.WriteLine("X- Sair");
             Console.WriteLine();
 
-            string opcaoUsuario=  Console.ReadLine().ToUpper();
+            string opcaoUsuario = Console.ReadLine().ToUpper();
             Console.WriteLine();
             return opcaoUsuario;
         }
@@ -45,12 +45,15 @@ namespace DioFlix
         }
         public static Serie CriaSerie()
         {
+
             foreach (int i in Enum.GetValues(typeof(Genero)))
             {
                 Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
             }
             Console.Write("Digite o numero do gênero entre as opções acima: ");
             int entradaGenero = int.Parse(Console.ReadLine());
+            if (entradaGenero < 1 || entradaGenero > 13)
+                throw new ModelException("Genero não encontrado");
 
             Console.Write("Digite o título da série: ");
             string entradaTitulo = Console.ReadLine();
@@ -67,38 +70,73 @@ namespace DioFlix
                 descricao: entradaDescricao,
                 ano: entradaAno);
             return serieCriada;
+
         }
         public static void InserirSerie()
         {
+            try
+            {
+                Console.WriteLine("Inserir nova série");
+                Serie novaSerie = CriaSerie();
+                repositorio.insere(novaSerie);
+            }
+            catch (Exception e)
+            {
 
-            Console.WriteLine("Inserir nova série");
-            Serie novaSerie = CriaSerie();
-            repositorio.insere(novaSerie);
+                Console.WriteLine("Erro ao criar a séries: " + e.Message);
+            }
+
 
         }
         public static void AtualizarSerie()
         {
+            try
+            {
+                Console.Write("Digite o Id da série que deseja atualizar: ");
+                int entradaId = int.Parse(Console.ReadLine());
+                Serie serieAtualizada = CriaSerie();
 
-            Console.Write("Digite o Id da série que deseja atualizar: ");
-            int entradaId = int.Parse(Console.ReadLine());
-            Serie serieAtualizada = CriaSerie();
 
-            
-            repositorio.atualiza(entradaId, serieAtualizada);
+                repositorio.atualiza(entradaId, serieAtualizada);
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Id não encontrado"); ;
+            }
+
 
         }
         public static void ExcluiSerie()
         {
-            Console.Write("Digite o Id da série que deseja excluir: ");
-            int entradaId = int.Parse(Console.ReadLine());
-            repositorio.exclui(entradaId);
+            try
+            {
+                Console.Write("Digite o Id da série que deseja excluir: ");
+                int entradaId = int.Parse(Console.ReadLine());
+                repositorio.exclui(entradaId);
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Id não encontrado");
+            }
+
 
         }
         public static void VisualizarSerie()
         {
-            Console.Write("Digite o Id da série que deseja vizualizar: ");
-            int entradaId = int.Parse(Console.ReadLine());
-            Console.WriteLine(repositorio.RetornaPorId(entradaId));
+            try
+            {
+                Console.Write("Digite o Id da série que deseja vizualizar: ");
+                int entradaId = int.Parse(Console.ReadLine());
+                Console.WriteLine(repositorio.RetornaPorId(entradaId));
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Id não encontrado");
+            }
+
         }
     }
 }

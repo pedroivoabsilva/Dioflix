@@ -12,3 +12,17 @@ C:\Users\Pedro Ivo\source\repos\Series\Series\obj\Debug\netcoreapp3.1\DioFlix.cs
 C:\Users\Pedro Ivo\source\repos\Series\Series\obj\Debug\netcoreapp3.1\DioFlix.dll
 C:\Users\Pedro Ivo\source\repos\Series\Series\obj\Debug\netcoreapp3.1\DioFlix.pdb
 C:\Users\Pedro Ivo\source\repos\Series\Series\obj\Debug\netcoreapp3.1\DioFlix.genruntimeconfig.cache
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\bin\Debug\netcoreapp3.1\DioFlix.exe
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\bin\Debug\netcoreapp3.1\DioFlix.deps.json
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\bin\Debug\netcoreapp3.1\DioFlix.runtimeconfig.json
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\bin\Debug\netcoreapp3.1\DioFlix.runtimeconfig.dev.json
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\bin\Debug\netcoreapp3.1\DioFlix.dll
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\bin\Debug\netcoreapp3.1\DioFlix.pdb
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\obj\Debug\netcoreapp3.1\DioFlix.csproj.AssemblyReference.cache
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\obj\Debug\netcoreapp3.1\DioFlix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\obj\Debug\netcoreapp3.1\DioFlix.AssemblyInfoInputs.cache
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\obj\Debug\netcoreapp3.1\DioFlix.AssemblyInfo.cs
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\obj\Debug\netcoreapp3.1\DioFlix.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\obj\Debug\netcoreapp3.1\DioFlix.dll
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\obj\Debug\netcoreapp3.1\DioFlix.pdb
+C:\Users\Pedro Ivo\source\repos\Series\Dioflix\obj\Debug\netcoreapp3.1\DioFlix.genruntimeconfig.cache
