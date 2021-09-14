@@ -38,7 +38,9 @@ namespace DioFlix
                                     Tela.VisualizarFilme();
                                     break;
                                 default:
-                                    throw new ArgumentOutOfRangeException();
+                                    Console.WriteLine("Opção não encontrada");
+                                    break;
+
                             }
                             Console.ReadLine();
                             Console.Clear();
@@ -71,7 +73,8 @@ namespace DioFlix
                                     Tela.VisualizarSerie();
                                     break;
                                 default:
-                                    throw new ArgumentOutOfRangeException();
+                                    Console.WriteLine("Opção não encontrada");
+                                    break;
                             }
                             Console.ReadLine();
                             Console.Clear();
@@ -79,6 +82,9 @@ namespace DioFlix
                             opcaoUsuario = Tela.MenuSerie();
 
                         }
+                        break;
+                    default:
+                        Console.WriteLine("Opção não encontrada");
                         break;
 
                 }
